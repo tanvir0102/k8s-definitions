@@ -13,10 +13,10 @@ spec:
       labels:
         app: myapp
 
-      spec:
-        containers:
-          - name: nginx-container
-            image: nginx
+    spec:
+      containers:
+        - name: nginx-container
+          image: nginx
 
   replicas: 6
   selector:
