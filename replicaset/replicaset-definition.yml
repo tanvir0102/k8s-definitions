@@ -4,7 +4,7 @@ metadata:
   name: myapp-replicaset
   labels:
     app: myapp
-    type: fron-end
+    type: front-end
     
 spec:
   template:

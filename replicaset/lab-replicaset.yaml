@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: lab-replicaset
+spec:
+  replicas: 4
+  selector: 
+    matchLabels: 
+      tier: frontend
+  template:
+    metadata:
+      name: nginx-po
+      labels:
+        tier: frontend
+    spec:
+      containers:
+        - name: nginx
+          image: nginx
